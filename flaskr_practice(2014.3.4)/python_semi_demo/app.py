@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+# 모듈화 후 서버쪽? 코드
 import flask
 import settings
 

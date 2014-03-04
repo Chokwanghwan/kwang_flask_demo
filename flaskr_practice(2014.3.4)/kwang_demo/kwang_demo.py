@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+# 1~4강모듈화 전 python 서버쪽? 코드
 import flask, flask.views
 import os
 import functools
