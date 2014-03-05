@@ -2,11 +2,11 @@
 <html>
     <head>
         <title>Base.html</title>
-        <link rel="stylesheet" type="text/css" href="/static/style.css"/>
-        <script type="text/javascript" src="/static/jquery-2.1.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/style.css"/> <!-- css file 소환-->
+        <script type="text/javascript" src="/static/jquery-2.1.0.min.js"></script> <!--jquery 소환-->
     </head>
     <body>
-        <div id="nav" style="float:left">
+        <div id="nav" style="float:left"> <!--nav div 생성-->
         Navigation:<br />
             <ul>
                 {% block nav %} {% endblock %}
@@ -14,7 +14,7 @@
                 <li><a href="{{url_for('music')}}">music</a></li>
             </ul>
         </div>
-        <div id="content">
+        <div id="content"> <!--content div 생성-->
             {% block body %} {% endblock %}
         </div>
         
