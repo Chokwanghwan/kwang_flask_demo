@@ -15,7 +15,7 @@ kwang_demo 주석처리 완료
         index, music, remote는 "base"를 확장하고
         login, show_entreis는 "layout"을 확장한다.(.html 생략)
 
-디렉토리 구성은 인덴트로 표현해놨으니깐 보기 편할껄? ㅋㅋㅋㅋㅋ
+디렉토리 구성을 인덴트 딱 맞춰서 아름답게 해놨는데 커밋하니깐 표현이 안되네 ㅁㄴㅇㄹ 에라이 ㅋㅋㅋㅋ
 한다고 했는데 모르는 메서드나 이해안되는 부분이 좀 많네..ㅋㅋ 
 semi_demo는 kwang_demo를 모듈화 한거니깐 kwang_demo이해하면 하겠다.
 
