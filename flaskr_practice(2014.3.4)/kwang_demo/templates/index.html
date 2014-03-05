@@ -1,14 +1,14 @@
-{% extends "base.html" %}
+{% extends "base.html" %} <!-- base.html을 상속-->
 {% block body %}
     <h1>Welcome!</h1>
-    {% if 'username' in session %}
-        <p>Welcome back {{session['username']}}!</p>
-        <form action="{{url_for('index')}}" method="post">
-            <input type="submit" name="logout" value="logout"/>
+    {% if 'username' in session %} <!-- username이 session안에 있으면-->
+        <p>Welcome back {{session['username']}}!</p> <!--Welcome back +user의 이름+을 출력한다-->
+        <form action="{{url_for('index')}}" method="post"> <!--로그인이 성공하면 index url을 띄운다-->
+            <input type="submit" name="logout" value="logout"/> <!--로그아웃을 위한 button을 만든다.-->
         </form>
-    {% else %}
+    {% else %} <!-- username이 session안에 없으면 A login is required:를 출력한다.-->
         <p>A login is required:</p>
-        <form action="{{url_for('index')}}" method="post">
+        <form action="{{url_for('index')}}" method="post"> <!--다시 로그인을 시도하기 위해서 index ure을 띄우고 로그인 폼을 다시 부른다-->
             <p>Username:<br/>
             <input type="text" name="username"/></p>
             <p>Password:<br/>
@@ -16,7 +16,7 @@
             <p><input type="submit" value="submit"/></p>
         </form>
     {% endif %}
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages() %} <!--with문부터는 잘 모르겠음....ㅋㅋㅋ-->
         {% for message in messages %}
             {{message}}
         {% endfor %}
