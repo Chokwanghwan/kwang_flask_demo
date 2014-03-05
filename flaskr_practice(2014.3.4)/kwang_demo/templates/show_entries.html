@@ -1,13 +1,13 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} <!--layout.html을 확장함-->
 {% block body %}
-  {% if session.logged_in %}
+  {% if session.logged_in %} <!--로그인 성공시? 잘모르겠다-->
     <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
       <dl>
         <dt>Title:
-        <dd><input type=text size=30 name=title>
+        <dd><input type=text size=30 name=title> <!--타이틀 메시지 삽입 공간-->
         <dt>Text:
-        <dd><textarea name=text rows=5 cols=40></textarea>
-        <dd><input type=submit value=Share>
+        <dd><textarea name=text rows=5 cols=40></textarea> <!--텍스트 메시지 삽입 공간-->
+        <dd><input type=submit value=Share> <!--Share라는 이름의 submit버튼 추가-->
       </dl>
     </form>
   {% endif %}

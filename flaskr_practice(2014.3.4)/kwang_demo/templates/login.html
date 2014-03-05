@@ -1,8 +1,8 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} <!--layout.html을 확장함-->
 {% block body %}
   <h2>Login</h2>
-  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %}
-  <form action="{{ url_for('login') }}" method=post>
+  {% if error %}<p class=error><strong>Error:</strong> {{ error }}{% endif %} <!--만약 에러가 뜨면 Error: 에러메시지 출력-->
+  <form action="{{ url_for('login') }}" method=post> <!--login이라는 url로 연결하고 해당폼은 login폼이다-->
     <dl>
       <dt>Username:
       <dd><input type=text name=username>
